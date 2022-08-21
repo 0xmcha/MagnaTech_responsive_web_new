@@ -1,3 +1,28 @@
+
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyAbv6MER0tymIAb7TOqMHyqcJ78tNU64Dg",
+  authDomain: "magnatech-8d29d.firebaseapp.com",
+  projectId: "magnatech-8d29d",
+  storageBucket: "magnatech-8d29d.appspot.com",
+  messagingSenderId: "30108335069",
+  appId: "1:30108335069:web:a2ce72530d936248385434",
+  measurementId: "G-HGJEB35VTH"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+
+
+
 /*===== MENU SHOW =====*/ 
 const showMenu = (toggleId, navId) =>{
     const toggle = document.getElementById(toggleId),

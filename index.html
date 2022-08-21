@@ -55,7 +55,7 @@
             </section>
             
             <!--===== sevice =====-->
-            <section class="service " id="service">
+            <section class="service" id="service">
                 <h2 class="section-title">service</h2>
 
                 <div class="service__container bd-grid">
@@ -107,10 +107,42 @@
                     </form>
                 </div>
             </section>
+            <!-- Messenger Chat Plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat Plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "140875029874638");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v14.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
         </main>
 
         <!--===== FOOTER =====-->
         <footer class="footer">
+
+            
             <p class="footer__title">Magnatech</p>
             <div class="footer__social">
                 <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
