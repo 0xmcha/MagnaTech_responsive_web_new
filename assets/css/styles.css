@@ -26,7 +26,7 @@
   --mb-2: 1rem;
   --mb-4: 2rem;
   --mb-5: 2.5rem;
-  --mb-6: 3rem;
+  --mb-6: 2.4rem;
   /*===== z index =====*/
   --z-back: -10;
   --z-fixed: 100;
@@ -71,23 +71,32 @@ ul {
 a {
   text-decoration: none;
 }
-
+.logoimg{
+  max-width: 120%;
+  object-fit: contain;
+  padding-left: 40px;
+}
 img {
   
-  height: auto;
-  display: block;
-  font-weight: 300px;
-  size: 300vh;
+
+  
+  height: 540px;
+  object-fit: contain;
+  transform: scale(1.2);
+
 }
 
 /*===== CLASS CSS ===== */
 .section-title {
+  justify-content: center;
+  align-items: center;
   position: relative;
-  font-size: var(--h2-font-size);
   color: #fff;
   margin-top: var(--mb-2);
   margin-bottom: var(--mb-4);
-  text-align: center;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  
 }
 
 .section-title::after {
@@ -103,8 +112,15 @@ img {
 }
 
 .section {
-  padding-top: 3rem;
-  padding-bottom: 2rem;
+  padding-top: 14rem;
+  padding-bottom: 3rem;
+}
+/* Services */
+.img_ass{
+  display: flex;
+  justify-content: center;
+  float: left;
+  
 }
 
 /*===== LAYOUT =====*/
@@ -153,7 +169,7 @@ img {
 
 .nav__link {
   position: relative;
-  color: #1f1f1f;
+  color: #141313;
 }
 
 .nav__link:hover {
@@ -174,13 +190,13 @@ img {
   color: rgb(11, 170, 181);
   font-size: 23px;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  letter-spacing: 0.5vh;
-  
+  letter-spacing: 0.7vh;
   }
 
 a:hover{
   color: #fff;
   transition: 0.3s; 
+
 }
 
 .nav__toggle {
@@ -220,7 +236,7 @@ a:hover{
   font-size: var(--big-font-size);
   margin-bottom: var(--mb-5);
   color:#fff;
-  
+margin-right: 400px;  
 }
 
 .home__title-color {
@@ -259,23 +275,34 @@ a:hover{
 
 /*BUTTONS*/
 .button {
-  display: inline-block;
-  background-color:#1b1b1be1;
-  color: #fff;
-  padding: .75rem 2.5rem;
-  font-weight: var(--font-semi);
-  border-radius: .5rem;
-  transition: .3s;
-}
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  height: 45px;
+  width: 90px;
 
-.button:hover {
-  box-shadow: 0px 10px 36px rgba(0, 0, 0, 0.15);
-}
+  background-image: linear-gradient(45deg,blue,#00f0a0,blue);
+  background-size: 500% 400%;
+  color: white;
+  border-radius: 12px;
+  transition: 0.6s all;
+ }
+ 
+ .button:hover {
+  background-position: 75% 50%;
+  transform: perspective(100px)
+ }
+ 
+ .button:active {
+  transform: scale(0.95);
+  transition: 0.1s;
+ }
 
 /* ===== ABOUT =====*/
 .about__container {
   row-gap: 2rem;
   text-align: center;
+  justify-content: center;
 }
 
 .about__subtitle {
@@ -284,14 +311,18 @@ a:hover{
 }
 
 .about__img {
-  justify-self: center;
+  align-items: center;
   max-width: 100%;
   max-height: 100%;
   
   
 }
 .about__text{
-  color:rgb(245, 245, 245)
+  color:rgb(245, 245, 245);
+  font-weight: bold;
+  font-size: 20px;
+  
+  margin-right: 180px;
 }
 
 .about__img img {
@@ -494,8 +525,8 @@ a:hover{
     margin: 0;
   }
   .section {
-    padding-top: 4rem;
-    padding-bottom: 3rem;
+    padding-top: 13rem;
+    padding-bottom: 2rem;
   }
   .section-title {
     margin-bottom: var(--mb-6);
@@ -530,7 +561,7 @@ a:hover{
     bottom: 10%;
   }
   .about__container {
-    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
  
   .skills__container {
@@ -557,3 +588,4 @@ a:hover{
     width: 500px;
   }
 }
+
