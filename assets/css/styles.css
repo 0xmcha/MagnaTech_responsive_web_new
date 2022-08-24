@@ -9,7 +9,10 @@
   /* HSL color mode */
   /*(168, 76%, 36%); 
 ; */
-
+@font-face {
+  font-family:Share Techno;
+  src: url(https://fonts.google.com/specimen/Share+Tech+Mono?query=tech);
+}
   --hue-color: 157;
   --first-color: hsl(var(--hue-color), 89%, 60%);
   --second-color: hsl(var(--hue-color), 46%, 12%);
@@ -168,7 +171,16 @@ img {
 }
 
 .nav__logo {
-  color: hsl(145deg 100% 30%);
+  color: rgb(11, 170, 181);
+  font-size: 23px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  letter-spacing: 0.5vh;
+  
+  }
+
+a:hover{
+  color: #fff;
+  transition: 0.3s; 
 }
 
 .nav__toggle {
@@ -208,6 +220,7 @@ img {
   font-size: var(--big-font-size);
   margin-bottom: var(--mb-5);
   color:#fff;
+  
 }
 
 .home__title-color {
