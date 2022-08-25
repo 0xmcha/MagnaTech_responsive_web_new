@@ -1,6 +1,6 @@
 /* Font */
 @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap');
-
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css');
 /* Variables */
 :root {
     --c-brand: #a225a9;
@@ -176,9 +176,9 @@ img {
     /*background-image: url(../images/about.png);*/
     background-position: center;
     background-size: cover;
-    
-    
-   
+
+
+
 }
 
 /* Services */
@@ -237,7 +237,7 @@ img {
     justify-content: center;
 }
 
-.project img, 
+.project img,
 .project .content {
     transition: var(--transition);
 }
@@ -310,7 +310,7 @@ footer h4 {
 }
 
 footer p,
-footer li, 
+footer li,
 footer li a {
     color: rgba(255,255,255, 0.7);
 }
@@ -336,4 +336,89 @@ footer ul li {
 
 .footer-bottom a {
     color: var(--c-brand);
+}
+
+.lang-menu {
+    width: 100px;
+    text-align: right;
+    font-weight: bold;
+    margin-top: 25px;
+    position: relative;
+}
+.lang-menu .selected-lang {
+    display: flex;
+    justify-content: space-between;
+    line-height: 2;
+    cursor: pointer;
+}
+.lang-menu .selected-lang:before {
+    content: '';
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-image: url(https://www.countryflags.io/us/flat/32.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.lang-menu ul {
+    margin: 0;
+    padding: 0;
+    display: none;
+    background-color: #fff;
+    border: 1px solid #f8f8f8;
+    position: absolute;
+    top: 45px;
+    right: 0px;
+    width: 125px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+}
+
+
+.lang-menu ul li {
+    list-style: none;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lang-menu ul li a {
+    text-decoration: none;
+    width: 125px;
+    padding: 5px 10px;
+    display: block;
+}
+
+.lang-menu ul li:hover {
+    background-color: #f2f2f2;
+}
+
+.lang-menu ul li a:before {
+    content: '';
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+    margin-right: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+
+.en:before {
+    background-image: url();
+}
+.kr:before {
+    background-image: url();
+}
+
+.ar:before {
+    background-image: url();
+}
+
+
+.lang-menu:hover ul {
+    display: block;
 }
