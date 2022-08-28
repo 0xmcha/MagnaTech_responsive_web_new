@@ -12,8 +12,16 @@
     --transition: all .4s cubic-bezier(.165, .84, .44, 1);
     --shadow: 0px 15px 40px rgba(0, 0, 0, 0.1);
 }
-/* Darkmode */
 
+.img_logo{
+    color: #a225a9;
+    max-width: 100%;
+    max-height: 100%;
+    height: 600px;
+    display: block;
+    position: relative; left: 800px;
+  margin-top: -600px;
+}
 
 
 /* Reset & Helpers */
