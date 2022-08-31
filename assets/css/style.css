@@ -22,6 +22,21 @@
     position: relative; left: 800px;
   margin-top: -600px;
 }
+.img_mail{
+    width: 28px;
+    height: 28px;
+    color: white;
+}
+.mail_link{
+    color: rgba(255,255,255, 0.7);
+}
+.number_phone{
+    color:rgba(255,255,255, 0.7);
+    margin-left: 7px;
+}
+.phone_logo{
+    margin-left: 2.5px;
+}
 
 
 /* Reset & Helpers */
