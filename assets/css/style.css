@@ -385,10 +385,10 @@ footer ul li {
         color: rgb(250, 245, 249);
     }
     .navbar.scrolled{
-        background-color: rgba(22, 22, 22, 0.1);
+        background-color: rgba(22, 22, 22, 0.95);
     }
     footer{
-        background-color: rgba(0, 0, 0, 0.1);
+        background-color: rgba(0, 0, 0, 0.822);
     }
     .navbar-brand{
         color: rgba(var(--c-dark-brand-rgb), 0.4);
