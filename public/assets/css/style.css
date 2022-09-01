@@ -13,14 +13,62 @@
     --shadow: 0px 15px 40px rgba(0, 0, 0, 0.1);
 }
 
-.img_logo{
+
+.logo {
+   max-width: 100%;
+    max-height: 100%;
+  position: center top;
+  padding:0px;
+  margin: 0 auto;
+}
+ 
+@media only screen and (min-width: 20em) {
+  .logo {
+      position: center 300px;
+ 
+  }
+}
+ /* 328px */
+ 
+@media only screen and (min-width: 48em){
+  .logo { 
     color: #a225a9;
     max-width: 100%;
     max-height: 100%;
     height: 600px;
     display: block;
-    position: relative; left: 800px;
-  margin-top: -600px;
+    position: relative; right: 500px;
+  margin-top: -700px;
+  }
+}
+/* 768px */
+ 
+@media only screen and (min-width: 56.25em){
+  .logo {
+    color: #a225a9;
+    max-width: 100%;
+    max-height: 100%;
+    height: 600px;
+    display: block;
+    position: relative; right: 500px;
+  margin-top: -700px;
+  }
+ }
+
+.img_mail{
+    width: 28px;
+    height: 28px;
+    color: white;
+}
+.mail_link{
+    color: rgba(255,255,255, 0.7);
+}
+.number_phone{
+    color:rgba(255,255,255, 0.7);
+    margin-left: 7px;
+}
+.phone_logo{
+    margin-left: 2.5px;
 }
 
 
