@@ -13,15 +13,48 @@
     --shadow: 0px 15px 40px rgba(0, 0, 0, 0.1);
 }
 
-.img_logo{
+
+.logo {
+   max-width: 100%;
+    max-height: 100%;
+  position: center top;
+  padding:0px;
+  margin: 0 auto;
+}
+ 
+@media only screen and (min-width: 20em) {
+  .logo {
+      position: center 300px;
+ 
+  }
+}
+ /* 328px */
+ 
+@media only screen and (min-width: 48em){
+  .logo { 
     color: #a225a9;
     max-width: 100%;
     max-height: 100%;
     height: 600px;
     display: block;
-    position: relative; left: 800px;
+    position: relative; left: 500px;
   margin-top: -600px;
+  }
 }
+/* 768px */
+ 
+@media only screen and (min-width: 56.25em){
+  .logo {
+    color: #a225a9;
+    max-width: 100%;
+    max-height: 100%;
+    height: 600px;
+    display: block;
+    position: relative; left: 500px;
+  margin-top: -600px;
+  }
+ }
+
 .img_mail{
     width: 28px;
     height: 28px;
