@@ -1,9 +1,12 @@
 /* Font */
 @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap');
 @font-face {
+
     font-family: 'K24';
     src: url(assets\fonts\K24KurdishLight-Light.ttf);
 }
+
+
 
 
 /* Variables */
@@ -125,7 +128,8 @@
     display: none;
     position: absolute;
     background-color: #202020;
-    min-width: 160px;
+    min-width: 120px;
+    border-radius: 8px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
   }
@@ -133,7 +137,7 @@
   /* Links inside the dropdown */
   .dropdown-content a {
     color: rgb(243, 243, 243);
-    padding: 6px 4px;
+    padding: 6px 6px;
     text-decoration: none;
     display: block;
   }
@@ -235,11 +239,13 @@ a:hover {
 
 .navbar-toggler {
     border-radius: 0;
+    background-color: #202020;
 }
 
 .navbar-toggler:focus {
     box-shadow: none;
 }
+
 
 @media (min-width: 992px) {
     .navbar-expand-lg .navbar-nav .nav-link {
@@ -261,7 +267,7 @@ a:hover {
 .navbar-brand {
     font-size: 24px;
     font-weight: 700;
-    color: var(--c-dark);
+    color: var(--c-brand);
 }
 
 .social-icon {
@@ -514,8 +520,11 @@ footer ul li {
         background-color: rgba(0, 0, 0, 0.822);
     }
     .navbar-brand{
-        color: rgba(var(--c-dark-brand-rgb), 0.4);
+        color: var(--c-brand);
     }
+  .navbar-brand:hover{
+    color: white;
+  }
 }
 
 
